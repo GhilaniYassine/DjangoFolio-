@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=hi
-    , initial-scale=1.0">
-    <title>Document</title>
+	{% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+	<title>My Website</title>
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis eos quidem tenetur velit aperiam magni dolorem nesciunt ab quia quis ratione dolores sapiente rerum, maiores, voluptates nisi, soluta repudiandae.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quibusdam nesciunt? Asperiores neque ut adipisci sapiente ea nam temporibus, architecto illum? Quos, fugit at fugiat possimus praesentium animi tempora repellat!</p>
+	<h1>HELLO THERE</h1>
+	<img src="{% static 'imgs/mypicPRO.jpg' %}" alt="Profile Picture">
 </body>
 </html>
