@@ -1,14 +1,71 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	{% load static %}
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
-	<title>My Website</title>
+    <title>Yassine Ghilani</title>
+    <link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<h1>HELLO THERE</h1>
-	<img src="{% static 'imgs/mypicPRO.jpg' %}" alt="Profile Picture">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-body h-100 border-info" id="profile-wrapper">
+                    <img id="profile-pic" src="{% static 'imgs/mypicPRO.jpg' %}" >
+                    <hr>
+                    <h4>Hi I'm Yassine Ghilani!</h4>
+                    <p>A passionate software developer and tech enthusiast</p>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card card-body h-100 border-info">
+                    <h4>About Me</h4>
+                    <hr>
+                    <p>I'm a dedicated software developer with a strong passion for creating efficient and innovative solutions. As an avid hackathon enthusiast, I've participated in several competitions including "Nuit d'Info 2024 @ ISITCOM" and achieved success in "AI Night Challenge 2nd Edition" and "AI Impact Challenge".</p>
+                    <p>I'm passionate about teaching and knowledge sharing, having conducted multiple workshops to help others grow in tech. My certifications from DataCamp and NVIDIA demonstrate my commitment to continuous learning in data science and AI.</p>
+                    <p>Always eager to learn and open for collaborations!</p>
+                    <ul class="social-links">
+                        <li><a href="https://www.datacamp.com/portfolio/ghilaniyassine11" target="_blank">
+                            <img class="social" src="{% static 'imgs/datacamp.jpg' %}" alt="DataCamp Certificate">
+                        </a></li>
+                        <li><a href="https://www.nvidia.com/your-certificate" target="_blank">
+                            <img class="social" src="{% static 'imgs/nvidia.jpeg' %}" alt="NVIDIA Certificate">
+                        </a></li>
+                        <li><a href="https://www.linkedin.com/in/yassineghilani/" target="_blank">
+                            <img class="social" src="{% static 'imgs/linkdln.png' %}" alt="LinkedIn">
+                        </a></li>
+                        <li><a href="https://github.com/GhilaniYassine" target="_blank">
+                            <img class="social" src="{% static 'imgs/github.png' %}" alt="GitHub Profile">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+                    <h5>Technical Skills</h5>
+                    <hr>
+                    <p>• Programming Languages: Python, JavaScript</p>
+                    <p>• Frameworks: Django, React</p>
+                    <p>• Databases: PostgreSQL, MongoDB</p>
+                    <p>• Tools: Git, Docker, AWS</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card-body h-100">
+                    <h5>Current Focus</h5>
+                    <hr>
+                    <p>Currently expanding my knowledge in Machine Learning and Cloud Technologies while building robust web applications using Django and React.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
 </body>
 </html>
